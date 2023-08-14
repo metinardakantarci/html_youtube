@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube</title>
+    <link rel="icon" type="image/x-icon" style="width: 10px;" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-8d95b745961f6b33ab3aa1b98a45291a.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
+</head>
+
+<style>
+    .icon-hover,
+    .kucukVideoResim {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="navbar sticky-top">
+                    <div class="row">
+                        <div class="col-lg-12 logo" >
+                            <i class="fa-regular fa-xl fa-bars  icon-hover"></i>
+                            <a href="anasayfa.html"><img class="img-fluid " style="width: 100px; height: 60px;" src="img/logo.png" alt=""></a><sup>TR</sup>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="search-bar col-12 d-none d-md-block d-lg-block ">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" style="width: 600px;" class="form-control" placeholder="Ara" aria-label="Search">
+                                    <button class="btn btn-outline-dark" type="button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <i class=" fas fa-search d-lg-none d-md-none d-xl-none d-xsm-block  icon-hover"></i>
+                            <a style="text-decoration: none; color: rgb(0, 0, 0);" href="dark.html">
+                                <i class="fa-light mx-1 fa-lg fa-moon icon-hover"></i>
+                            </a>
+                            <i class="fa-light mx-1 fa-lg fa-video-plus icon-hover"></i>
+                            <i class="fa-light mx-1 fa-lg fa-bell icon-hover"></i>
+                            <img class="mx-1 img-fluid icon-hover" src="https://www.gentas.com.tr/wp-content/uploads/2021/05/3190-siyah_renk_g483_1250x1000_t3cksofn.jpg" style="border-radius: 100%; width: 30px; height: 30px;" alt="">
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="pc col-lg-8 mt-4  d-none d-none d-md-block d-lg-block">
+                <img src="img/Mavi.jpg" alt="" class="img-fluid" style="height: 550px; width: 1000px;">
+                <h3 class="mt-3">Video ismi</h3>
+                <div class="kanalBilgileri d-flex">
+                    <img src="img/Sarı.jpg" alt="" style="border-radius: 100%; width: 50px; height: 50px;">
+                    <h5 class="mx-2 mt-1">Metin Arda Kantarcı</h5>
+                    <i class="fa-sharp fa-solid fa-circle-check mt-2" style="color: #808080;"></i>
+                    <div class="butonlar d-flex">
+                        <div class="aboneButon mx-5 d-flex" style="width: 180px; height: 37px; background-color: #e8e8e8; border-radius: 14px;">
+                            <i class="mt-3 mx-2 fa-light fa-lg fa-bell icon-hover"></i>
+                            <p class="mx-1 icon-hover" style="margin-top: 5px;">Abone olundu</p>
+                            <i class="mx-2 fa-light fa-lg fa-angle-down icon-hover" style="margin-top: 19px;"></i>
+                        </div>
+                        <div class="begenButon mx-3 d-flex" style="width: 120px; height: 37px; background-color: #e8e8e8; border-radius: 14px;">
+                            <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-up"><p class="" style="font-size: 15px; margin-left: 23px;">100</p></i>
+                            <p class="mx-1">|</p>
+                            <i class="fa-regular mx-1 mt-3 fa-lg fa-thumbs-down icon-hover"></i>
+
+                        </div>
+                        <div class="paylasButon mx-3 d-flex" style="width: 100px; height: 37px; background-color: #e8e8e8; border-radius: 14px;">
+                            <i class="fa-sharp mt-3 mx-2 fa-regular fa-lg fa-share icon-hover"></i>
+                            <p class="mt-1">Paylaş</p>
+                        </div>
+                        <div class="indirButon mx-2 d-flex" style="width:80px; height: 37px; background-color: #e8e8e8; border-radius: 14px;">
+                            <i class="fa-regular fa-lg mx-2 mt-3 fa-arrow-down-to-line icon-hover"></i>
+                            <p class="mt-1">İndir</p>
+                        </div>
+                        <div class="dahaFazlaButon mx-2 d-flex" style="width:38px; height: 37px; background-color: #e8e8e8; border-radius: 100%;">
+                            <i class="fa-solid fa-lg fa-ellipsis icon-hover" style="margin-top: 18px; margin-left: 10px;"></i>
+                        </div>
+                    </div>    
+                </div>
+                <div class="aciklama mt-3" style="width: 1000px; height: 150px; background-color: #e8e8e8; border-radius: 14px;">
+                    <div class="d-flex">
+                        <h5 class="mt-3 mx-3">200B görüntüleme</h5>
+                        <h5 class="mt-3 mx-1">5 gün önce</h5>
+                    </div>
+                    <p class="mx-3">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti minima voluptatum quod error aperiam repellendus, sapiente qui ex beatae unde incidunt odio, facilis saepe quasi itaque ipsa earum rem expedita. 
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quibusdam nihil et expedita aperiam repudiandae non nobis ut, doloribus nemo at ipsum ex quam error autem eum, possimus sequi. Itaque?,
+                        <a style="text-decoration: none; color: black; font-weight: bold;" href="#">...daha fazla</a>
+                    </p>
+                </div>
+                <div class="yorumlar mt-3">
+                    <div class="d-flex">
+                        <img src="img/Mavi.jpg" style="border-radius: 100%; width: 60px;">
+                        <div class="">        
+                            <input class="mt-4 mx-2 border-0" type="text" placeholder="Yorum ekleyin..." class="form-control border-0">
+                            <div style="border-bottom: 1px solid #606060; width: 900px;" class="mt-1"></div>
+                        </div>
+                    </div>
+
+                  <div class="flex-grow-1 flex-shrink-1">
+                    <div class="d-flex flex-start mt-4">
+                    <a href="#" class="me-3">
+                        <img src="img/Sarı.jpg" class="rounded-circle shadow-1-strong" width="65px" height="65px" alt="">
+                    </a>
+                      <div class="flex-grow-1 flex-shrink-1">
+                        <div>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-1">
+                              @willsmith <span class="mx-2" style="font-size: 12px; color: #606060;">4 saat önce</span>
+                            </p>
+                          </div>
+                          <p class="small mb-0">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula consequat semper. Donec rhoncus mollis erat. In hac habitasse platea dictumst. Morbi eleifend, ante vel sagittis dignissim, felis ipsum pharetra enim, ut eleifend arcu ex laoreet leo. Etiam vel leo id ligula sagittis varius eu ut neque. Fusce finibus libero quis rutrum cursus.
+                          </p>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-up"></i><span>10</span>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-down"></i>
+                          <span class="mx-3" style="font-size: 13px;">Yanıtla</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>    
+                  <div class="flex-grow-1 flex-shrink-1">
+                    <div class="d-flex flex-start mt-4">
+                    <a href="#" class="me-3">
+                        <img src="img/Sarı.jpg" class="rounded-circle shadow-1-strong" width="65px" height="65px" alt="">
+                    </a>
+                      <div class="flex-grow-1 flex-shrink-1">
+                        <div>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-1">
+                              @willsmith <span class="mx-2" style="font-size: 12px; color: #606060;">4 saat önce</span>
+                            </p>
+                          </div>
+                          <p class="small mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula consequat semper. Donec rhoncus mollis erat. In hac habitasse platea dictumst. Morbi eleifend, ante vel sagittis dignissim, felis ipsum pharetra enim, ut eleifend arcu ex laoreet leo. Etiam vel leo id ligula sagittis varius eu ut neque. Fusce finibus libero quis rutrum cursus.
+                          </p>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-up"></i><span>10</span>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-down"></i>
+                          <span class="mx-3" style="font-size: 13px;">Yanıtla</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="flex-grow-1 flex-shrink-1">
+                    <div class="d-flex flex-start mt-4">
+                    <a href="#" class="me-3">
+                        <img src="img/Sarı.jpg" class="rounded-circle shadow-1-strong" width="65px" height="65px" alt="">
+                    </a>
+                      <div class="flex-grow-1 flex-shrink-1">
+                        <div>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-1">
+                              @willsmith <span class="mx-2" style="font-size: 12px; color: #606060;">4 saat önce</span>
+                            </p>
+                          </div>
+                          <p class="small mb-0">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula consequat semper. Donec rhoncus mollis erat. In hac habitasse platea dictumst. Morbi eleifend, ante vel sagittis dignissim, felis ipsum pharetra enim, ut eleifend arcu ex laoreet leo. Etiam vel leo id ligula sagittis varius eu ut neque. Fusce finibus libero quis rutrum cursus.
+                          </p>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-up"></i><span>10</span>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-down"></i>
+                          <span class="mx-3" style="font-size: 13px;">Yanıtla</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                  <div class="flex-grow-1 flex-shrink-1">
+                    <div class="d-flex flex-start mt-4">
+                    <a href="#" class="me-3">
+                        <img src="img/Sarı.jpg" class="rounded-circle shadow-1-strong" width="65px" height="65px" alt="">
+                    </a>
+                      <div class="flex-grow-1 flex-shrink-1">
+                        <div>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-1">
+                              @willsmith <span class="mx-2" style="font-size: 12px; color: #606060;">4 saat önce</span>
+                            </p>
+                          </div>
+                          <p class="small mb-0">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula consequat semper. Donec rhoncus mollis erat. In hac habitasse platea dictumst. Morbi eleifend, ante vel sagittis dignissim, felis ipsum pharetra enim, ut eleifend arcu ex laoreet leo. Etiam vel leo id ligula sagittis varius eu ut neque. Fusce finibus libero quis rutrum cursus.
+                          </p>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-up"></i><span>10</span>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-down"></i>
+                          <span class="mx-3" style="font-size: 13px;">Yanıtla</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>    
+                  <div class="flex-grow-1 flex-shrink-1">
+                    <div class="d-flex flex-start mt-4">
+                    <a href="#" class="me-3">
+                        <img src="img/Sarı.jpg" class="rounded-circle shadow-1-strong" width="65px" height="65px" alt="">
+                    </a>
+                      <div class="flex-grow-1 flex-shrink-1">
+                        <div>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-1">
+                              @willsmith <span class="mx-2" style="font-size: 12px; color: #606060;">4 saat önce</span>
+                            </p>
+                          </div>
+                          <p class="small mb-0">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula consequat semper. Donec rhoncus mollis erat. In hac habitasse platea dictumst. Morbi eleifend, ante vel sagittis dignissim, felis ipsum pharetra enim, ut eleifend arcu ex laoreet leo. Etiam vel leo id ligula sagittis varius eu ut neque. Fusce finibus libero quis rutrum cursus.
+                          </p>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-up"></i><span>10</span>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-down"></i>
+                          <span class="mx-3" style="font-size: 13px;">Yanıtla</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="flex-grow-1 flex-shrink-1">
+                    <div class="d-flex flex-start mt-4">
+                    <a href="#" class="me-3">
+                        <img src="img/Sarı.jpg" class="rounded-circle shadow-1-strong" width="65px" height="65px" alt="">
+                    </a>
+                      <div class="flex-grow-1 flex-shrink-1">
+                        <div>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-1">
+                              @willsmith <span class="mx-2" style="font-size: 12px; color: #606060;">4 saat önce</span>
+                            </p>
+                          </div>
+                          <p class="small mb-0">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula consequat semper. Donec rhoncus mollis erat. In hac habitasse platea dictumst. Morbi eleifend, ante vel sagittis dignissim, felis ipsum pharetra enim, ut eleifend arcu ex laoreet leo. Etiam vel leo id ligula sagittis varius eu ut neque. Fusce finibus libero quis rutrum cursus.
+                          </p>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-up"></i><span>10</span>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-down"></i>
+                          <span class="mx-3" style="font-size: 13px;">Yanıtla</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>    
+                  <div class="flex-grow-1 flex-shrink-1">
+                    <div class="d-flex flex-start mt-4">
+                    <a href="#" class="me-3">
+                        <img src="img/Sarı.jpg" class="rounded-circle shadow-1-strong" width="65px" height="65px" alt="">
+                    </a>
+                      <div class="flex-grow-1 flex-shrink-1">
+                        <div>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-1">
+                              @willsmith <span class="mx-2" style="font-size: 12px; color: #606060;">4 saat önce</span>
+                            </p>
+                          </div>
+                          <p class="small mb-0">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula consequat semper. Donec rhoncus mollis erat. In hac habitasse platea dictumst. Morbi eleifend, ante vel sagittis dignissim, felis ipsum pharetra enim, ut eleifend arcu ex laoreet leo. Etiam vel leo id ligula sagittis varius eu ut neque. Fusce finibus libero quis rutrum cursus.
+                          </p>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-up"></i><span>10</span>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-down"></i>
+                          <span class="mx-3" style="font-size: 13px;">Yanıtla</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>    
+                  <div class="flex-grow-1 flex-shrink-1">
+                    <div class="d-flex flex-start mt-4">
+                    <a href="#" class="me-3">
+                        <img src="img/Sarı.jpg" class="rounded-circle shadow-1-strong" width="65px" height="65px" alt="">
+                    </a>
+                      <div class="flex-grow-1 flex-shrink-1">
+                        <div>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-1">
+                              @willsmith <span class="mx-2" style="font-size: 12px; color: #606060;">4 saat önce</span>
+                            </p>
+                          </div>
+                          <p class="small mb-0">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula consequat semper. Donec rhoncus mollis erat. In hac habitasse platea dictumst. Morbi eleifend, ante vel sagittis dignissim, felis ipsum pharetra enim, ut eleifend arcu ex laoreet leo. Etiam vel leo id ligula sagittis varius eu ut neque. Fusce finibus libero quis rutrum cursus.
+                          </p>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-up"></i><span>10</span>
+                          <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-down"></i>
+                          <span class="mx-3" style="font-size: 13px;">Yanıtla</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+
+                </div>
+            </div>
+
+            <div class="mobil col-8 mt-0 d-xsm-block d-md-none d-lg-none">
+                <img src="img/Kırmızı.jpg" alt="" class="" style="height: 300px; width: 340px;">
+                <h3 class="mt-2">Video ismi</h3>
+                <div class="d-flex" style="width: 1400px;">
+                    <p class="mx-0">133B görüntüleme</p>
+                    <p class="mx-3">4 ay önce</p>
+                    <a href="#" class="mx-2" style="text-decoration: none; font-weight: bold; color: black;">Daha fazla...</a>
+                </div>
+                <div class="d-flex">
+                    <img src="img/Sarı.jpg" alt="" style="border-radius: 100%; width: 50px; height: 50px;">
+                    <h5 class="mx-2 mt-1" >Metin Arda Kantarcı</h5>
+                    <i class="fa-sharp fa-solid fa-circle-check mt-1" style="color: #808080;"></i>
+                    <div class="aboneButon d-flex" style="width: 100px; height: 50px; margin-left: 110px; background-color: #e8e8e8; border-radius: 14px;">
+                        <i class="mt-3 mx-2 fa-solid fa-bell-slash"></i>
+                        <i class="mt-4  mx-2 fa-light fa-lg fa-angle-down icon-hover"></i>
+                    </div>
+                </div>
+                <div class="butonlar mt-2 d-flex">
+                    <div class="begenButon mx-0 d-flex" style="width: 120px; height: 37px; background-color: #e8e8e8; border-radius: 14px;">
+                        <i class="icon-hover fa-regular mt-3 mx-2 fa-lg fa-thumbs-up"><p class="" style="font-size: 15px; margin-left: 23px;">100</p></i>
+                        <p class="mx-1">|</p>
+                        <i class="fa-regular mx-1 mt-3 fa-lg fa-thumbs-down icon-hover"></i>
+                    </div>
+                    <div class="paylasButon mx-3 d-flex" style="width: 100px; height: 37px; background-color: #e8e8e8; border-radius: 14px;">
+                        <i class="fa-sharp mt-3 mx-1 fa-regular fa-lg fa-share icon-hover"></i>
+                        <p class="mt-1 mx-1" style="padding-right: 5px;">Paylaş</p>
+                    </div>
+                    <div class="indirButon mx-0 d-flex" style="width:80px; height: 37px; background-color: #e8e8e8; border-radius: 14px;">
+                        <i class="fa-regular fa-lg mx-2 mt-3 fa-arrow-down-to-line icon-hover"></i>
+                        <p class="mt-1" style="padding-right: 5px;">İndir</p>
+                    </div>
+                    <div class="dahaFazlaButon mx-3 " style="width:90px; height: 37px; background-color: #e8e8e8; border-radius: 100%;">
+                        <i class="fa-solid fa-lg fa-ellipsis icon-hover" style="margin-top: 18px; padding-left: 5px; padding-right: 5px;"></i>
+                    </div>
+                </div> 
+                <div class="yorumlar mt-3" style="width: 350px; height: 150px; background-color: #e8e8e8; border-radius: 14px;">
+                    <div class="d-flex">
+                        <h6 class="mt-3 mx-3">Yorumlar</h6>
+                        <h6 class="mt-3 mx-">125</h6>
+                    </div>
+                    <p class="mx-3">
+                        <img src="img/Siyah.jpg" style="border-radius: 100%; width: 30px;">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti minima voluptatum quod error aperiam repellendus, sapiente qui ex beatae unde.
+                        <i class="mx-2 fa-light fa-lg fa-angle-down icon-hover"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="pc kucukVideoResim col-lg-4 col-sm-12 mt-4 d-flex  d-none d-none d-md-block d-lg-block flex-column">
+                <div class="d-flex flex-column">
+                    <div class="d-flex">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 210px; height: 125px; border-radius: 14px;">
+                        <div class="ms-2">
+                            <p class="mb-0">DENEME VİDEO İSMİ</p>
+                            <div class="d-flex">
+                                <p class="mt-1 mb-0">Metin Arda</p>
+                                <i class="fa-sharp fa-solid fa-circle-check mt-2 mx-2" style="color: #808080;"></i>
+                            </div>
+                            <div class="d-flex">
+                                <p class="mt-0 mb-0">46B görüntüleme</p>
+                                <p class="mt-0 mb-0"> · 3 yıl önce</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="mobil kucukVideoResim col-lg-4 col-sm-12 mt-4 d-flex  d-xsm-block d-md-none d-lg-none flex-column">
+                <div class="">
+                        <img src="img/Kırmızı.jpg" alt="" style="width: 343px; height: 165px;">
+                        <div class="d-flex">
+                            <img src="img/Siyah.jpg" class="mt-3 img-fluid" style="border-radius: 100%; width: 60px; height: 50px;">
+                            <p class="mt-3" style="margin-left: 20px;">Lorem ipsum, dolor sit dent impedit suscipit veniam in</p>
+                        </div>
+                        <div class="d-flex" style="font-size: 13px;">
+                            <p style="margin-left: 23px;">Metin Arda Kantarcı ·</p>
+                            <p class="mx-1">11B görüntüleme ·</p>
+                            <p class="mx-1">3 Yıl önce</p>
+                        </div>
+                </div>
+                <div class="">
+                    <img src="img/Kırmızı.jpg" alt="" style="width: 343px; height: 165px;">
+                    <div class="d-flex">
+                        <img src="img/Siyah.jpg" class="mt-3 img-fluid" style="border-radius: 100%; width: 60px; height: 50px;">
+                        <p class="mt-3" style="margin-left: 20px;">Lorem ipsum, dolor sit dent impedit suscipit veniam in</p>
+                    </div>
+                    <div class="d-flex" style="font-size: 13px;">
+                        <p style="margin-left: 23px;">Metin Arda Kantarcı ·</p>
+                        <p class="mx-1">11B görüntüleme ·</p>
+                        <p class="mx-1">3 Yıl önce</p>
+                    </div>
+                </div>
+                <div class="">
+                <img src="img/Kırmızı.jpg" alt="" style="width: 343px; height: 165px;">
+                <div class="d-flex">
+                    <img src="img/Siyah.jpg" class="mt-3 img-fluid" style="border-radius: 100%; width: 60px; height: 50px;">
+                    <p class="mt-3" style="margin-left: 20px;">Lorem ipsum, dolor sit dent impedit suscipit veniam in</p>
+                </div>
+                <div class="d-flex" style="font-size: 13px;">
+                    <p style="margin-left: 23px;">Metin Arda Kantarcı ·</p>
+                    <p class="mx-1">11B görüntüleme ·</p>
+                    <p class="mx-1">3 Yıl önce</p>
+                </div>
+                </div>
+                <div class="">
+                    <img src="img/Kırmızı.jpg" alt="" style="width: 343px; height: 165px;">
+                    <div class="d-flex">
+                        <img src="img/Siyah.jpg" class="mt-3 img-fluid" style="border-radius: 100%; width: 60px; height: 50px;">
+                        <p class="mt-3" style="margin-left: 20px;">Lorem ipsum, dolor sit dent impedit suscipit veniam in</p>
+                    </div>
+                    <div class="d-flex" style="font-size: 13px;">
+                        <p style="margin-left: 23px;">Metin Arda Kantarcı ·</p>
+                        <p class="mx-1">11B görüntüleme ·</p>
+                        <p class="mx-1">3 Yıl önce</p>
+                    </div>
+                </div>
+                <div class="">
+                <img src="img/Kırmızı.jpg" alt="" style="width: 343px; height: 165px;">
+                <div class="d-flex">
+                    <img src="img/Siyah.jpg" class="mt-3 img-fluid" style="border-radius: 100%; width: 60px; height: 50px;">
+                    <p class="mt-3" style="margin-left: 20px;">Lorem ipsum, dolor sit dent impedit suscipit veniam in</p>
+                </div>
+                <div class="d-flex" style="font-size: 13px;">
+                    <p style="margin-left: 23px;">Metin Arda Kantarcı ·</p>
+                    <p class="mx-1">11B görüntüleme ·</p>
+                    <p class="mx-1">3 Yıl önce</p>
+                </div>
+                </div>
+                <div class="">
+            <img src="img/Kırmızı.jpg" alt="" style="width: 343px; height: 165px;">
+            <div class="d-flex">
+                <img src="img/Siyah.jpg" class="mt-3 img-fluid" style="border-radius: 100%; width: 60px; height: 50px;">
+                <p class="mt-3" style="margin-left: 20px;">Lorem ipsum, dolor sit dent impedit suscipit veniam in</p>
+            </div>
+            <div class="d-flex" style="font-size: 13px;">
+                <p style="margin-left: 23px;">Metin Arda Kantarcı ·</p>
+                <p class="mx-1">11B görüntüleme ·</p>
+                <p class="mx-1">3 Yıl önce</p>
+            </div>
+                </div>
+                <div class="">
+                <img src="img/Kırmızı.jpg" alt="" style="width: 343px; height: 165px;">
+                <div class="d-flex">
+                    <img src="img/Siyah.jpg" class="mt-3 img-fluid" style="border-radius: 100%; width: 60px; height: 50px;">
+                    <p class="mt-3" style="margin-left: 20px;">Lorem ipsum, dolor sit dent impedit suscipit veniam in</p>
+                </div>
+                <div class="d-flex" style="font-size: 13px;">
+                    <p style="margin-left: 23px;">Metin Arda Kantarcı ·</p>
+                    <p class="mx-1">11B görüntüleme ·</p>
+                    <p class="mx-1">3 Yıl önce</p>
+                </div>
+                </div>
+                <div class="">
+            <img src="img/Kırmızı.jpg" alt="" style="width: 343px; height: 165px;">
+            <div class="d-flex">
+                <img src="img/Siyah.jpg" class="mt-3 img-fluid" style="border-radius: 100%; width: 60px; height: 50px;">
+                <p class="mt-3" style="margin-left: 20px;">Lorem ipsum, dolor sit dent impedit suscipit veniam in</p>
+            </div>
+            <div class="d-flex" style="font-size: 13px;">
+                <p style="margin-left: 23px;">Metin Arda Kantarcı ·</p>
+                <p class="mx-1">11B görüntüleme ·</p>
+                <p class="mx-1">3 Yıl önce</p>
+            </div>
+                </div>
+                <div class="">
+        <img src="img/Kırmızı.jpg" alt="" style="width: 343px; height: 165px;">
+        <div class="d-flex">
+            <img src="img/Siyah.jpg" class="mt-3 img-fluid" style="border-radius: 100%; width: 60px; height: 50px;">
+            <p class="mt-3" style="margin-left: 20px;">Lorem ipsum, dolor sit dent impedit suscipit veniam in</p>
+        </div>
+        <div class="d-flex" style="font-size: 13px;">
+            <p style="margin-left: 23px;">Metin Arda Kantarcı ·</p>
+            <p class="mx-1">11B görüntüleme ·</p>
+            <p class="mx-1">3 Yıl önce</p>
+        </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
